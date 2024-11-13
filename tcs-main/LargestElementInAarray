@@ -1,0 +1,25 @@
+public class Main
+{
+	public static void main(String[] args) {
+      
+      int a[]={1,1,1,1,1,2,3,4,5,6,7,7,7,7};
+      int count,max=0;
+      
+      for(int i=0;i<a.length;i++)
+        {
+            count=1;
+           for(int j=i+1;j<a.length;j++)
+              {
+                  if(a[i]==a[j])
+                    {
+                        count++;
+                    }
+              }
+              if(count>max)
+                {
+                    max=count;
+                }
+        }
+        System.out.println(max);
+	}
+}
